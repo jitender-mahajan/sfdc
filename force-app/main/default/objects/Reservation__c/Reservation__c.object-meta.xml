@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Stores reservations for hotel rooms</description>
+    <enableActivities>true</enableActivities>
+    <enableReports>true</enableReports>
+    <label>Reservation</label>
+    <pluralLabel>Reservations</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+
+    <nameField>
+        <displayFormat>RES-{00000}</displayFormat>
+        <label>Reservation Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+
+<fields>
+        <fullName>Guest__c</fullName>
+        <description>Guest for this reservation</description>
+        <externalId>false</externalId>
+        <label>Guest</label>
+        <referenceTo>Guest__c</referenceTo>
+        <relationshipLabel>Reservations</relationshipLabel>
+        <relationshipName>Reservations</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+
+<fields>
+        <fullName>Room__c</fullName>
+        <description>Room being reserved</description>
+        <externalId>false</externalId>
+        <label>Room</label>
+        <referenceTo>Room__c</referenceTo>
+        <relationshipLabel>Reservations</relationshipLabel>
+        <relationshipName>Reservations</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+
+    <fields>
+        <fullName>CheckInDate__c</fullName>
+        <description>Check-in date</description>
+        <externalId>false</externalId>
+        <label>Check-In Date</label>
+        <required>true</required>
+        <type>Date</type>
+    </fields>
+
+    <fields>
+        <fullName>CheckOutDate__c</fullName>
+        <description>Check-out date</description>
+        <externalId>false</externalId>
+        <label>Check-Out Date</label>
+        <required>true</required>
+        <type>Date</type>
+    </fields>
+
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Reservation status</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Booked</fullName>
+                    <default>true</default>
+                    <label>Booked</label>
+                </value>
+                <value>
+                    <fullName>Checked-In</fullName>
+                    <default>false</default>
+                    <label>Checked-In</label>
+                </value>
+                <value>
+                    <fullName>Checked-Out</fullName>
+                    <default>false</default>
+                    <label>Checked-Out</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+
+    <fields>
+        <fullName>TotalAmount__c</fullName>
+        <description>Total amount for the stay</description>
+        <externalId>false</externalId>
+        <label>Total Amount</label>
+        <precision>16</precision>
+        <scale>2</scale>
+        <required>false</required>
+        <type>Currency</type>
+        <unique>false</unique>
+    </fields>
+
+    <fields>
+        <fullName>SpecialRequests__c</fullName>
+        <description>Special requests by the guest</description>
+        <externalId>false</externalId>
+        <label>Special Requests</label>
+        <length>32768</length>
+        <required>false</required>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+</CustomObject>

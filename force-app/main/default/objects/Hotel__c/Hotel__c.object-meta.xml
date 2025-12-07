@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Stores hotel master information</description>
+    <enableActivities>true</enableActivities>
+    <enableReports>true</enableReports>
+    <label>Hotel</label>
+<pluralLabel>Hotels</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+
+    <nameField>
+        <label>Hotel Name</label>
+        <type>Text</type>
+    </nameField>
+
+    <fields>
+        <fullName>Address__c</fullName>
+        <description>Street address</description>
+        <externalId>false</externalId>
+        <label>Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+
+    <fields>
+        <fullName>City__c</fullName>
+        <description>City</description>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+
+    <fields>
+        <fullName>State__c</fullName>
+        <description>State</description>
+        <externalId>false</externalId>
+        <label>State</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+
+    <fields>
+        <fullName>Country__c</fullName>
+        <description>Country</description>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+
+    <fields>
+        <fullName>Phone__c</fullName>
+        <description>Hotel phone</description>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <type>Phone</type>
+        <unique>false</unique>
+    </fields>
+
+    <fields>
+        <fullName>Rating__c</fullName>
+        <description>Hotel rating</description>
+        <externalId>false</externalId>
+        <label>Rating</label>
+        <precision>3</precision>
+        <scale>1</scale>
+        <required>false</required>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

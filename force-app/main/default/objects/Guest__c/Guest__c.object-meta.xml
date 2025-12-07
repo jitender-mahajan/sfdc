@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Stores guest profile information</description>
+    <enableActivities>true</enableActivities>
+    <enableReports>true</enableReports>
+    <label>Guest</label>
+<pluralLabel>Guests</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+
+    <nameField>
+        <label>Guest Name</label>
+        <type>Text</type>
+    </nameField>
+
+    <fields>
+        <fullName>Email__c</fullName>
+        <description>Guest email</description>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+
+    <fields>
+        <fullName>Phone__c</fullName>
+        <description>Guest phone</description>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <type>Phone</type>
+        <unique>false</unique>
+    </fields>
+
+    <fields>
+        <fullName>LoyaltyNumber__c</fullName>
+        <description>Loyalty program number</description>
+        <externalId>false</externalId>
+        <label>Loyalty Number</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

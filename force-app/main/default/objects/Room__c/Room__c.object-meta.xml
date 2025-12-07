@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Stores room details for a hotel</description>
+    <enableActivities>true</enableActivities>
+    <enableReports>true</enableReports>
+    <label>Room</label>
+<pluralLabel>Rooms</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+
+    <nameField>
+        <label>Room Name</label>
+        <type>Text</type>
+    </nameField>
+
+    <fields>
+        <fullName>Hotel__c</fullName>
+        <description>Parent Hotel</description>
+        <externalId>false</externalId>
+        <label>Hotel</label>
+        <referenceTo>Hotel__c</referenceTo>
+        <relationshipLabel>Rooms</relationshipLabel>
+        <relationshipName>Rooms</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+
+    <fields>
+        <fullName>RoomNumber__c</fullName>
+        <description>Room number identifier</description>
+        <externalId>false</externalId>
+        <label>Room Number</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+
+    <fields>
+        <fullName>RoomType__c</fullName>
+        <description>Type of room</description>
+        <externalId>false</externalId>
+        <label>Room Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>true</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>Deluxe</fullName>
+                    <default>false</default>
+                    <label>Deluxe</label>
+                </value>
+                <value>
+                    <fullName>Suite</fullName>
+                    <default>false</default>
+                    <label>Suite</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+
+    <fields>
+        <fullName>Capacity__c</fullName>
+        <description>Maximum occupancy</description>
+        <externalId>false</externalId>
+        <label>Capacity</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <required>true</required>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+
+    <fields>
+        <fullName>PricePerNight__c</fullName>
+        <description>Nightly rate</description>
+        <externalId>false</externalId>
+        <label>Price Per Night</label>
+        <precision>16</precision>
+        <scale>2</scale>
+        <required>true</required>
+        <type>Currency</type>
+        <unique>false</unique>
+    </fields>
+
+    <fields>
+        <fullName>IsAvailable__c</fullName>
+        <description>Is room available</description>
+        <externalId>false</externalId>
+        <label>Is Available</label>
+        <defaultValue>true</defaultValue>
+        <required>false</required>
+        <type>Checkbox</type>
+    </fields>
+</CustomObject>
