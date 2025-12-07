@@ -50,7 +50,7 @@
         <fields>RESERVATION__C.CHECKINDATE__C</fields>
         <fields>RESERVATION__C.CHECKOUTDATE__C</fields>
         <sortField>CREATEDDATE</sortField>
-        <sortOrder>Descending</sortOrder>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>

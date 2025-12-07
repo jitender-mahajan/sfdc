@@ -38,7 +38,8 @@
         <description>Loyalty program number</description>
         <externalId>false</externalId>
         <label>Loyalty Number</label>
-        <length>50</length>
+        <precision>18</precision>
+        <scale>0</scale>
         <required>false</required>
         <type>Number</type>
         <unique>false</unique>

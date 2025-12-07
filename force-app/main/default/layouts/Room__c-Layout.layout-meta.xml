@@ -7,7 +7,7 @@
         <label>Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Required</behavior>
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
@@ -37,6 +37,7 @@
                 <field>IsAvailable__c</field>
             </layoutItems>
         </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -62,7 +63,7 @@
         <fields>RESERVATION__C.CHECKINDATE__C</fields>
         <fields>RESERVATION__C.CHECKOUTDATE__C</fields>
         <sortField>CREATEDDATE</sortField>
-        <sortOrder>Descending</sortOrder>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>
