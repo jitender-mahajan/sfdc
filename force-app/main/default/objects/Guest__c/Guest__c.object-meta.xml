@@ -40,7 +40,7 @@
         <label>Loyalty Number</label>
         <length>50</length>
         <required>false</required>
-        <type>Text</type>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
 </CustomObject>
