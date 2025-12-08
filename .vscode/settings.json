@@ -5,5 +5,7 @@
     "**/.sf": true,
     "**/.sfdx": true
   },
-  "xml.preferences.showSchemaDocumentationType": "none"
+  "xml.preferences.showSchemaDocumentationType": "none",
+  "salesforce.einsteinForDevelopers.enableDebugLogging": false,
+  "salesforce.einsteinForDevelopers.optimizeContextWindowForDataMasking": false
 }

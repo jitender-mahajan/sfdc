@@ -56,15 +56,7 @@
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
-    <relatedLists>
-        <relatedList>RelatedList</relatedList>
-        <fields>RESERVATION__C.NAME</fields>
-        <fields>RESERVATION__C.STATUS__C</fields>
-        <fields>RESERVATION__C.CHECKINDATE__C</fields>
-        <fields>RESERVATION__C.CHECKOUTDATE__C</fields>
-        <sortField>CREATEDDATE</sortField>
-        <sortOrder>Desc</sortOrder>
-    </relatedLists>
+    <!-- Removed invalid related list; add back with a valid child relationship name when available -->
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>

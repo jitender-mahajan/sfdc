@@ -56,15 +56,7 @@
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
-    <relatedLists>
-        <relatedList>RelatedList</relatedList>
-        <fields>ROOM__C.NAME</fields>
-        <fields>ROOM__C.ROOMNUMBER__C</fields>
-        <fields>ROOM__C.ROOMTYPE__C</fields>
-        <fields>ROOM__C.PRICEPERNIGHT__C</fields>
-        <sortField>CREATEDDATE</sortField>
-        <sortOrder>Desc</sortOrder>
-    </relatedLists>
+    <!-- Removed invalid related list; add back with a valid child relationship name when available -->
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>true</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>
